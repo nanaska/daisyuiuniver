@@ -3,36 +3,20 @@ export default function Skills() {
         className="min-h-screen flex flex-col justify-center items-center md:items-start p-2 md:px-12 bg-gradient-to-tl from-secondary to-primary">
         <div className="flex text-primary-content flex-col">
             <h2 className="text-3xl md:text-5xl  lg:text-7xl  font-extrabold ">My soft skills</h2>
-            <div className="mt-8 overflow-x-auto">
-                <table className="table text-base-content w-full">
+            <div className="mt-8 flex flex-col ">
+                <div>
+                    <h2>interpersonal skills :</h2>
+                    <input type="range" min="0" max="100" value="60" className="range range-md"/>
+                </div>
+                <div>
+                   <h2>English speaking skills :</h2>
+                   <input type="range" min="0" max="100" value="30" className="range range-md"/>
+               </div>
+                <div>
+                    <h2>Personal integrity :</h2>
+                    <input type="range" min="0" max="100" value="70" className="range range-md"/>
+                </div>
 
-                    <thead>
-                    <tr>
-
-                        <th>Skill</th>
-                        <th>Assest</th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-
-                    <tr>
-
-                        <td>English speaking skills</td>
-                        <td><input type="range" min="0" max="100" value="30" className="range range-md"/></td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Hart Hagerty</td>
-                        <td>Desktop Support Technician</td>
-
-                    </tr>
-
-
-                    </tbody>
-                </table>
             </div>
 
         </div>
