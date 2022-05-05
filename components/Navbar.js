@@ -19,7 +19,7 @@ export default function Navbar() {
     }
     return (<div onScroll={check} className={h? "z-[100] navbar backdrop-opacity-0 px-12 fixed duration-400":"duration-400 z-[100] navbar backdrop-opacity-100 bg-base-300 px-12 fixed"}>
         <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <a className="btn btn-ghost normal-case md:text-xl">daisyUI</a>
         </div>
         <div className="flex-none ">
             <ul className="menu menu-horizontal p-0">

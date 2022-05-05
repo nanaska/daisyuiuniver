@@ -3,9 +3,11 @@ import Hero from "../components/Hero";
 import Second from "../components/Second";
 import Image from "next/image";
 import githublogolight from "../public/GitHub-Mark-Light-120px-plus.png";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 import themepic from "../public/theme.png"
+import Features from "../components/Features";
+import Skills from "../components/Skills";
 
 
 export default function Home() {
@@ -24,7 +26,14 @@ export default function Home() {
 
     if (typeof window != "undefined") {
         window.addEventListener("scroll", check)
+
     }
+    //loadscreen
+    const [load, setLoad] = useState(false)
+    useEffect(()=>{
+        setLoad(true)
+
+    },[])
     return (
         <div data-theme={theme}>
             <Head>
@@ -35,7 +44,7 @@ export default function Home() {
             <div onScroll={check}
                  className={h ? "z-[100] text-primary-content navbar backdrop-opacity-0 md:px-12 fixed duration-400" : "duration-400  z-[100] navbar backdrop-opacity-100 bg-base-300 px-12 fixed"}>
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case font-extrabold text-2xl">DS PORTFOLIO</a>
+                    <a className="btn btn-ghost normal-case font-extrabold md:text-2xl">DS PORTFOLIO</a>
                 </div>
                 <div className="flex-none ">
                     <ul className=" menu menu-horizontal  p-0">
@@ -72,13 +81,15 @@ export default function Home() {
                             </motion.ul>
                         </li>
                         <li  className="p-2 hover:scale-95">
-                            <Image src={githublogolight} height={20} width={30}/>
+                            <Image src={githublogolight} height={20} width={35}/>
                         </li>
                     </ul>
                 </div>
             </div>
             <Hero/>
             <Second/>
+            <Features/>
+            <Skills/>
         </div>
     )
 }
