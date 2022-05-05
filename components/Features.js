@@ -1,5 +1,5 @@
 export default function Features(){
-    return(<div className="min-h-min flex flex-col justify-center items-center mt-16 bg-base-300">
+    return(<div className="min-h-screen flex flex-col justify-center items-center mt-16 bg-base-300">
 
         <ul className="steps px-2 py-10 steps-vertical md:text-left text-center flex flex-col   md:max-w-4xl">
             <li className="step step-neutral">

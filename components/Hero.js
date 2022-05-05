@@ -4,7 +4,7 @@ import githublogodark from "../public/GitHub-Mark-120px-plus.png"
 import Link from "next/link";
 
 export default function Hero() {
-    return (<div className="min-h-screen   flex flex-col bg-gradient-to-br items-center  justify-center from-primary   to-secondary  bg-base-100">
+    return (<div className="min-h-[90vh] md:min-h-screen  flex flex-col bg-gradient-to-br items-center  justify-center from-primary   to-secondary  bg-base-100">
         <div className="md:mr-auto  md:px-20 text-center md:text-left text-primary-content">
             <h2 className="text-3xl md:text-5xl  lg:text-7xl  font-extrabold">Portfolio website</h2>
             <h3 className="text-2xl md:text-2xl lg:text-3xl font-extrabold">Here u can know about me better</h3>
