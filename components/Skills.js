@@ -4,7 +4,7 @@ export default function Skills() {
         <div className="flex text-primary-content flex-col">
             <h2 className="text-3xl md:text-5xl  lg:text-7xl  font-extrabold ">My soft skills</h2>
             <div className="mt-8 overflow-x-auto">
-                <table className="table text-neutral-content w-full">
+                <table className="table text-base-content w-full">
 
                     <thead>
                     <tr>
