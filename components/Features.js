@@ -6,7 +6,7 @@ export default function Features(){
                 <h2>This pritty boy was born in 2003 In yaroslavl</h2>
             </li>
             <li className="step step-neutral">
-                move to village and leave there around 7 years. Yeah i'm a village boy
+                move to village and leave there around 7 years. Yeah im a village boy
             </li>
             <li className="step step-neutral">
                 in 2010 im going to elementary school in Yaroslavl
