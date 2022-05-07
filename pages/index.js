@@ -33,7 +33,7 @@ export default function Home() {
     useEffect(() => {
         setTimeout(() => {
             setLoad(true)
-        }, 2000)
+        }, 5)
 
 
     }, [])
@@ -48,7 +48,7 @@ export default function Home() {
             </Head>
             {load ? <div>
                 <div onScroll={check}
-                     className={h ? "z-[100] text-primary-content navbar backdrop-opacity-0 md:px-12 fixed duration-400" : "duration-400  z-[100] navbar backdrop-opacity-100 bg-base-300 px-12 fixed"}>
+                     className={h ? "z-[100] text-primary-content navbar backdrop-opacity-0 md:px-14 fixed duration-400" : "duration-400  z-[100] navbar bg-opacity-95 bg-base-300 px-12 fixed"}>
                     <div className="flex-1">
                         <a className="btn btn-ghost normal-case font-extrabold md:text-2xl">DS PORTFOLIO</a>
                     </div>
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
                 <Hero/>
                 <Second/>
-                <Features/>
+
                 <Skills/>
             </div> : <div className="min-h-screen animate-spin flex flex-col items-center justify-center">
                 <div className="radial-progress" style={{"--value":"40"}}></div>

@@ -1,20 +1,37 @@
 import Image from "next/image"
 import githublogolight from "../public/GitHub-Mark-Light-120px-plus.png"
-import githublogodark from "../public/GitHub-Mark-120px-plus.png"
 import Link from "next/link";
 
 export default function Hero() {
-    return (<div className="min-h-[90vh] md:min-h-screen  flex flex-col bg-gradient-to-br items-center  justify-center from-primary   to-secondary  bg-base-100">
-        <div className="md:mr-auto  md:px-20 text-center md:text-left text-primary-content">
-            <h2 className="text-3xl md:text-5xl  lg:text-7xl  font-extrabold">Portfolio website</h2>
-            <h3 className="text-2xl md:text-2xl lg:text-3xl font-extrabold">Here u can know about me better</h3>
-            <div className=" flex relative z-[60]  flex-row items-center justify-center md:justify-start   mt-6 space-x-2">
-                <Link  href="https://github.com/nanaska"><div className=" space-x-2 btn   md:btn-lg">
-                    <Image src={githublogolight} height={30} width={30}/>
-                    <span className=" pr-4">Github</span>
-                </div></Link>
-                <div className="btn  btn-active btn-ghost md:btn-lg">
-                    My projects
+    return (<div
+        className="min-h-[90vh] bg-opacity-70 md:min-h-screen  flex flex-col bg-gradient-to-br items-center  justify-center from-primary   to-secondary  bg-base-100">
+
+        <div className="flex md:mr-auto flex-col  justify-center items-center gap-y-8 md:flex-row ">
+            <div className="md:mr-auto   md:px-[4rem] text-center md:text-left text-primary-content">
+                <h2 className="text-3xl md:text-5xl  lg:text-7xl  font-extrabold">Portfolio website</h2>
+                <h3 className="text-2xl md:text-2xl lg:text-3xl font-extrabold">Here u can know about me better</h3>
+                <div
+                    className=" flex relative z-[60]  flex-row items-center justify-center md:justify-start   mt-6 space-x-2">
+                    <Link href="https://github.com/nanaska">
+                        <div className=" space-x-2 btn   md:btn-lg">
+                            <Image src={githublogolight} height={30} width={30}/>
+                            <span className=" pr-4">Github</span>
+                        </div>
+                    </Link>
+                    <div className="btn  btn-active btn-ghost md:btn-lg">
+                        My projects
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div className="stats shadow">
+
+                    <div className="stat">
+                        <div className="stat-title">Total Page Views</div>
+                        <div className="stat-value">1,400</div>
+                        <div className="stat-desc"></div>
+                    </div>
+
                 </div>
             </div>
         </div>
